@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PasteleriaCandy</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            height: 400px;
+            background-color: black;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position:center center;
+        }
+        .head1{
+            background-image: url(https://image.shutterstock.com/image-vector/p-letter-logo-black-backgroundgold-260nw-1664756968.jpg);
+            background-position: right ;
+            background-size: auto;
+            margin-left: auto;
+            margin-right: auto;
+            background-repeat: no-repeat;
+            font-size:40px;
+            color:	#D4AF37;
+            font-weight:bold;
+            height: auto;
+        }
+
+        .head2{
+            color: 	#D4AF37;
+        }
+        .menu { 
+            width: auto;
+            height: 70px;
+            background-image: url(http://joyce.com.co/wp-content/uploads/2017/07/FOTOS-COVER-joyce.png);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+        }
+        .menu a {
+            float: right;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        .menu-log{
+            right: auto;
+            float: right;
+        }
+        article1 {
+            float: left;
+            padding: 20px;
+            width: 35%;
+            background-image: url(http://joyce.com.co/wp-content/uploads/2017/07/torta-19.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position:center center;
+            width: 34%;
+            height:  400px;
+            color: aliceblue;
+        }
+        article2{
+            float: left;
+            padding: 20px;
+            width: 34%;
+            
+            width: 33%;
+            height:  400px;
+            background-image: url(http://joyce.com.co/wp-content/uploads/2017/07/torta-4.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position:center center;
+            color: aliceblue;
+        }
+        article3{
+            float: right;
+            padding: 20px;
+            width: 34%;
+            width: 33%;
+            height:  400px;   
+            background-image: url(http://joyce.com.co/wp-content/uploads/2017/07/torta-17.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position:center center;
+            color: aliceblue; 
+        }
+        p{
+            color: rgb(255, 38, 0);
+        }
+        
+        footer {
+            background-image: url(http://joyce.com.co/wp-content/uploads/2017/07/FOTOS-COVER-joyce.png);
+            text-align: center;
+            color: black;
+            height: auto;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position:center center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="head1">PasteleriaCandy</div>
+        <div class="head2">cake & party</div>
+    </header>
+
+    <nav class="menu">
+        <a >INICIO</a>
+        <a >EVENTOS</a>
+    </nav>
+
+    <form method="POST" oninput="resultado.value=parseInt(valor1.value)+parseInt(valor2.value)">     
+    <article1>
+        <h2>Elige sabor </h2><br>
+            <input type="radio" id="valor1" name="sabor"value="10" onclick="alert ('Precio $10')">
+            <label for="Vanilla">Vanilla</label><br>
+            <input type="radio" id="valor1" name="sabor" value="8"onclick="alert ('Precio $8')">
+            <label for="Strawberry">Strawberry</label><br>
+            <input type="radio" id="valor1" name="sabor" value="15"onclick="alert ('Precio $15')">
+            <label for="Chocolate">Chocolate</label><br>
+            <input type="radio" id="valor1" name="sabor" value="10"onclick="alert ('Precio $10')">
+            <label for="Lemon">Lemon</label>
+            <br><br><br><br>
+
+        <h2>Combina sabores</h2>
+            <label for="pastel">¿Que sabor?</label>
+            <select id="pastel" name="pastel">
+                <option value="Wine">Wine</option>
+                <option value="Orange">Orange</option>
+                <option value="Mandarin">Mandarin</option>
+                <option value="Fruts">Fruts</option>
+            </select>
+    </article1>
+
+    <article2>
+        <h2>Elige adornos </h2><br>
+            <input type="radio" id="valor2" name="adornos"value="5" onclick="alert ('Precio $5')">
+            <label for="hearts">Hearts</label><br>
+            <input type="radio" id="valor2" name="adornos" value="8"onclick="alert ('Precio $8')">
+            <label for="flowers">Flowers</label><br>
+            <input type="radio" id="valor2" name="adornos" value="4"onclick="alert ('Precio $4')">
+            <label for="stars">Stars</label><br>
+            <input type="radio" id="valor2" name="adornos" value="7"onclick="alert ('Precio $7')">
+            <label for="Numbers">Numbers</label>
+            <br><br><br><br>
+        <h2>Combina adornos</h2>
+            <label for="adornos">¿Que adornos?</label>
+            <select id="adornos" name="adornos">
+                <option value="Wine">Christmas</option>
+                <option value="Orange">Halloween</option>
+                <option value="Mandarin">Easter</option>
+                <option value="Fruts">School</option>
+            </select>
+    </article2>
+        <article3>
+        <h2>Total pagar :
+        <br><br>
+        <p><output name="resultado" for="valor1 valor2"></output> $</p>
+        </h2>     
+    </form>         
+    </article3>
+      
+    <footer>
+        <h2>Comprar</h2>
+        <a href="./formulario.html" target="_blank"><input type="submit"value="buy"></a>
+    </footer>
+</body>
+
+</html>
